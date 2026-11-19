@@ -39,7 +39,8 @@ fun SharedPreferences.getCmdEnable(): Boolean {
 }
 
 fun SharedPreferences.getCmdArgs(): String {
-    return getStringNotNull("byedpi_cmd_args", DEFAULT_CMD_ARGS)
+       return getStringNotNull("byedpi_cmd_args", "-Ku -a3 -An -Kt,h -d1 -s0+s -d3+s -s6+s -d9+s -s12+s -d15+s -s20+s -d25+s -s30+s -An")
+
 }
 
 fun SharedPreferences.checkIpAndPortInCmd(): Pair<String?, String?> {
